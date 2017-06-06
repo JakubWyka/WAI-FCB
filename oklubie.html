@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Fc Barcelona</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="main.js"></script> 
+    <script src="licznik.js"></script>
+    <script src="punkty.js"></script>
+   
+   <script>
+            function myFunction() {
+            var para = document.createElement("P");
+            var t = document.createTextNode("FcBarcelona");
+            para.appendChild(t);
+            document.getElementById("glowny").appendChild(para);
+			}
+   </script>
+
+</head>
+<body onload="count_visits_session(), count_visits()">
+
+    <div id="dokument">
+        <div id="naglowek">
+            <a href="index.html"><img id="logo" src="logo.png" alt="logo" /></a>
+        </div>
+
+        
+                <div id="menu">
+                    <h2>Menu<span class="expand">&equiv;</span></h2>
+                    <nav>
+                        <ul id="przyciski">
+                            <li><a href="oklubie.html">O klubie</a></li>
+                            <li><a href="ankieta.html">Ankieta</a></li>
+                            <li><a href="info.html">Informacje</a></li>
+                            <li><a href="galeria.html">Galeria</a></li>
+                            <li><a href="sklad.html">Skład</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                </div>
+         
+
+        <div id="glowny">
+            <p><em>FC Barcelona</em>, w skrócie Barça  – kataloński  klub sportowy,
+             istniejący od chwili założenia drużyny piłkarskiej w 1899 roku przez grupę Szwajcarów, Anglików i Hiszpanów,
+             z czasem stał się katalońską instytucją o dużym znaczeniu społecznym. Jego dewiza to Més que un club (pol. Więcej niż klub).
+             Drużyna piłkarska należy do najbardziej utytułowanych zespołów w tej dyscyplinie – ma na koncie 24 mistrzostwa Hiszpanii, 
+            28 Pucharów Króla Hiszpanii, 12 Superpucharów Hiszpanii, 5 Pucharów Europy, 4 Puchary Zdobywców Pucharów, 5 Superpucharów Europy,
+             3 Klubowe Mistrzostwa Świata/Puchary Interkontynentalne i wiele innych trofeów.</p>
+        <br /><p>Zachęcamy do odwiedzenia <em>oficjalnej strony</em> Fc Barcelony:<a id="linkstrona" href="https://www.fcbarcelona.com/">kliknij tu!</a></p>
+            <object data="fcb.svg" type="image/svg+xml"></object>
+            <form id="f1" action="">
+                <p>Czy wiesz ile punktów ma barcelona w tabeli ? <br />
+                    <small>*dane na dzień 30.10.16</small></p>
+                <p>
+                   
+                    <label for="punkty">podaj tę liczbę:</label>
+                    <input id="e1" /><br />
+                    <input type="button" name="sprawdź" value="Sprawdź" onclick="spr()" />
+                
+            </form>
+            <p>
+                Odwiedziłeś tą podstronę juz po raz:
+                <em id=local></em>
+            </p>
+            <p>
+                A podczas tej sesji:
+                <em id=session></em>
+            </p>
+            <button onclick="myFunction()">Jaki jest najlepszy klub?</button>
+   
+           
+
+        </div>
+        
+        <div id="stopka">Autor: Jakub Wyka</div>
+    </div>
+
+</body>
+</html>

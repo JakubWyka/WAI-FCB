@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Fc Barcelona</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="main.js"></script> 
+</head>
+<body>
+
+    <div id="dokument">
+        <div id="naglowek">
+            <a href="index.html"><img src="logo.png" alt="logo" /></a>
+        </div>
+
+
+        <div id="menu">
+            <h2>Menu<span class="expand">&equiv;</span></h2>
+            <nav>
+                <ul id="przyciski">
+                    <li><a href="oklubie.html">O klubie</a></li>
+                    <li><a href="ankieta.html">Ankieta</a></li>
+                    <li><a href="info.html">Informacje</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="sklad.html">Skład</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="glowny">
+            <form>
+                <p><em>Weź udział w ankiecie!</em></p>
+                <p>Jesteś:</p>
+                <input type="radio" name="plec" value="mezczyzna" > mężczyzna<br>
+                <input type="radio" name="plec" value="kobieta"> kobieta<br>
+                
+                <p>Ile masz lat? </p>
+                <select name="Wiek">
+                    <option selected="selected">...</option>
+                    <option>mniej niż 10</option>
+                    <option>10-15</option>
+                    <option>16-20</option>
+                    <option>21-25</option>
+                    <option>26-30</option>
+                    <option>31-40</option>
+                    <option>41-50</option>
+                    <option>więcej niż 50</option>
+                </select><br />
+                <p>Twoi ulubieni zawodnicy to:</p>
+                <input type="checkbox" name="pilkarz" value="messi"> Messi<br>
+                <input type="checkbox" name="pilkarz" value="neymar"> Neymar<br>
+                <input type="checkbox" name="pilkarz" value="iniesta"> Iniesta<br>
+                <input type="checkbox" name="pilkarz" value="pique"> Pique
+                <p>Podstawowym bramkarzem Barcelony powinien być:</p>
+                <input type="radio" name="bramkarz" value="ter Stegen">Marc-André ter Stegen <br>
+                <input type="radio" name="bramkarz" value="Cillessen">Jasper Cillessen<br>
+                <br>
+                <p>Czy byłbyś zainteresowany organizowanym przez nas wyjazdem na mecz Barcelony?</p>
+                <input type="radio" name="wyjazd" value="tak">tak <br>
+                <input type="radio" name="wyjazd" value="nie">nie<br>
+                <textarea class="ankietaarea">jeśli nie, napisz dlaczego</textarea><br />
+                <p>Napisz poniżej ewentualne uwagi dot. działania strony:</p>
+                <textarea class="ankietaarea">uwagi:</textarea><br />
+                <input id="wyslij" type="submit" value="Wyślij">
+                <input type="reset" value="Wyczyść">
+            </form>
+        </div>
+
+        <div id="stopka">Autor: Jakub Wyka</div>
+    </div>
+
+</body>
+</html>

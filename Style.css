@@ -1,0 +1,324 @@
+﻿body {
+font-family : 'Lato', sans-serif;
+background-color : #9b9b9b;
+color:#9b9b9b;
+}
+#dokument {
+width : 986px;
+margin : 0 auto;
+color:black;
+}
+#naglowek {
+background-color : #9b9b9b;
+text-align : center;
+margin : 0px;
+border-radius : 7px;
+}
+#menu {
+background-color : #67686b;
+height : auto;
+width:150px;
+height:770px;
+margin :0px;
+border-radius : 7px;
+float:left;
+position:relative;
+left :10px;
+}
+#glowny {
+background-color : #67686b;
+height : 770px;
+width:810px;
+margin : 0px;
+border-radius : 7px;
+overflow-y : auto;
+overflow-x : hidden;
+float:right;
+position:relative;
+right:12px;
+}
+#stopka {
+clear : both;
+background-color : #280d3f;
+text-align : center;
+margin : 0px;
+border-radius : 7px;
+color : #D9D7DB;
+}
+p {
+margin : 0;
+padding : 15px;
+}
+a:link {
+color : black;
+text-decoration : none;
+}
+a:visited {
+color : black;
+text-decoration : none;
+}
+a:hover {
+color : #5A0CAD;
+text-decoration : none;
+}
+#glownyindex {
+background-color : #67686b;
+height : 770px;
+width:810px;
+margin : 0px;
+border-radius : 7px;
+background-image : url(images.jpg);
+background-repeat : no-repeat;
+background-size : 965px 700px;
+float:right;
+position:relative;
+right:12px;
+}
+p {
+font-size : 22px;
+}
+h2{
+    text-align:center;
+}
+em {
+color : #280d3f;
+font-size : 24px;
+}
+li {
+font-size : 22px;
+}
+table {
+border : black solid 1px;
+padding : 2px;
+font-size : 24px;
+border-collapse : collapse;
+position : relative;
+left : 180px;
+top : 100px;
+}
+td {
+border : black solid 1px;
+}
+th {
+background-color : #A443C4;
+}
+#mail {
+font-size : 30px;
+}
+#up {
+height : 70px;
+width : 70px;
+float : right;
+position : relative;
+bottom : 30px;
+}
+#galeria {
+position : relative;
+left : 190px;
+border : 0;
+margin-bottom : 100px;
+}
+.galeria {
+height : 200px;
+width : 200px;
+border : 0;
+}
+.galeria:hover {
+transform : scale(1.4);
+}
+#linkstrona {
+font-size : 34px;
+}
+textarea {
+width : 441px;
+height : 181px;
+}
+#kontakt {
+position : relative;
+left : 0px;
+top : 40px;
+}
+.ankietaarea {
+height : 100px;
+position : relative;
+left : 8px;
+}
+#wyslij {
+position : relative;
+left : 8px;
+}
+#adres {
+font-size : 20px;
+}
+.zmianakoloru{
+    position:relative;
+    top:687px;
+    float:left;
+    margin-right:5px;
+    margin-left:3px;
+}
+#kolortla{
+    position:relative;
+    top:683px;
+    margin:0px;
+}
+
+
+
+#przyciski {
+    list-style-type:none;
+    margin:auto;
+    padding:8px;
+    overflow:hidden;
+}
+#przyciski li {
+   float:left;
+   width:120px;
+}
+#przyciski li a, .przyciskdorozw {
+    display:block;
+    text-align:center;
+    padding:0px;
+    text-decoration:none;
+}
+.dropdown:hover, .przyciskdorozw {
+    background-color:#67686b;
+}
+li.dropdown{
+    display:inline-block;
+}
+.content {
+    display:none;
+    position:absolute;
+    top:10em;
+    background-color:#67686b;
+    width:100px;
+}
+.content a {
+    color:black;
+    padding: 12px 16px;
+    text-decoration:none;
+    display:block;
+    text-align:left;
+}
+.content a:hover {
+    color : #5A0CAD;
+}
+.dropdown:hover .content {
+    display:block;
+}
+#animation1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 30s; 
+    animation-name: example;
+    animation-duration: 30s;
+    float:right;
+}
+#animation2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 30s; 
+    animation-name: example;
+    animation-duration: 30s;
+    float:left;
+}
+@-webkit-keyframes example {
+    0%   {background-color: blue;}
+    15%  {background-color: aliceblue;}
+    30%  {background-color: blueviolet;}
+    45%  {background-color: deeppink;}
+    60%  {background-color: lightpink;}
+    75%  {background-color: purple;}
+    90%  {background-color: orangered;}
+    100% {background-color: orange;}
+}
+@keyframes example {
+    0%   {background-color: blue;}
+    15%  {background-color: aliceblue;}
+    30%  {background-color: blueviolet;}
+    45%  {background-color: deeppink;}
+    60%  {background-color: lightpink;}
+    75%  {background-color: purple;}
+    90%  {background-color: orangered;}
+    100% {background-color: orange;}
+}
+
+#menu span.expand {
+    display: none;
+} 
+/*RESPONSYWNY CSS*/
+@media (max-width: 768px){
+     #dokument, #naglowek, #glownyindex, #glowny, #stopka {
+        width: 100%;
+        margin: 0;
+        border-radius: 1px;
+        margin-top:2px;
+        right:0px;
+     }
+     body {
+       padding: 0;
+       margin: 0;
+    }
+    #menu{
+        height:50px;
+        width:100%;
+        left:0px;
+    }
+   img{
+	max-width: 100%;
+	height:auto;
+	width:auto;
+    }
+   textarea{
+       width:80%;
+       max-height:80px;
+   }
+   table{
+       max-width: 100%;
+	   height:auto;
+	   width:auto;
+       left:0px;
+       top:0px;
+       bottom:0px;
+       font-size:20px;
+   }
+   #galeria {
+    position : relative;
+    left : 0px;
+    border : 0;
+    margin-bottom : 100px;
+    }
+   #glownyindex {
+   background-size : 100%;
+   }
+   #kontakt{
+       left:10px;
+       top:auto;
+   }
+  
+  /*MENU :((( */
+    #menu {
+        float: none;
+        height:auto;
+        min-height:50px;
+    }
+    #menu nav {
+        display: none;
+    }
+    #menu span.expand {
+        display: inline-block;
+        float: right;
+        font-weight: normal;
+        font-size: 50px;
+        margin-top: -18px;
+    }
+     #menu h2 {
+        margin: 0px;
+    }
+     
+}

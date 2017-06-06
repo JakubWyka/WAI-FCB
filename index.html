@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Fc Barcelona</title>
+    <link rel="stylesheet" type="text/css" href="Style.css" >
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="main.js"></script> 
+	 <script>
+            function zmianakolorudom() {
+                document.getElementById("menu").style.background = "#67686b";
+            }
+            function zmianakoloruczerw() {
+                document.getElementById("menu").style.background = "red";
+            }
+            function zmianakolorunieb() {
+                document.getElementById("menu").style.background = "blue";
+            }
+            function zmianakoloruroz() {
+                document.getElementById("menu").style.background = "pink";
+            }
+            </script>
+</head>
+<body>
+
+    <div id="dokument">
+        <div id="naglowek">
+            <a href="index.html"><img src="logo.png" alt="logo" /></a> 
+        </div>
+
+
+        <div id="menu">
+            <h2>Menu<span class="expand">&equiv;</span></h2>
+            <nav>
+                <ul id="przyciski">
+                    <li><a href="oklubie.html">O klubie</a></li>
+                    <li><a href="ankieta.html">Ankieta</a></li>
+                    <li><a href="info.html">Informacje</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="sklad.html">Skład</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="glownyindex">
+            <p id="kolortla">Wybierz kolor tła menu:</p>
+            <input class="zmianakoloru" type="button" name="Domyślny" value="Domyślny" onclick="zmianakolorudom()" />
+            <input class="zmianakoloru" type="button" name="Czerwony" value="Czerwony" onclick="zmianakoloruczerw()" />
+            <input class="zmianakoloru" type="button" name="Niebieski" value="Niebieski" onclick="zmianakolorunieb()" />
+            <input class="zmianakoloru" type="button" name="Różowy" value="Różowy" onclick="zmianakoloruroz()" />
+           
+        </div>
+
+        <div id="stopka">Autor: Jakub Wyka</div>
+    </div>
+
+</body>
+</html>

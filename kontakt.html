@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Fc Barcelona</title>
+    <meta charset="utf-8" />
+        
+    
+    <link rel="stylesheet" type="text/css" href="Style.css" >
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="main.js"></script>
+       
+        <script>
+            $(function () {
+                $(document).tooltip();
+            });
+        </script>
+     </head>
+<body>
+    
+        <div id="dokument">
+            <div id="naglowek">
+                <a href="index.html"><img src="logo.png" alt="logo" /></a>
+            </div>
+
+
+            <div id="menu">
+                <h2>Menu<span class="expand">&equiv;</span></h2>
+                <nav>
+                    <ul id="przyciski">
+                        <li><a href="oklubie.html">O klubie</a></li>
+                        <li><a href="ankieta.html">Ankieta</a></li>
+                        <li><a href="info.html">Informacje</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="sklad.html">Skład</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="glowny">
+                <p><em>Wyślij do nas wiadomość!</em></p>
+                <a href="mailto:qubawy@gmail.com">wyślij Email</a><br /><br />
+                <form id="kontakt" action="mailto:qubawy@gmail.com" method="post" >
+                    <label>Imię<input id="tooltip" title="Danę nie będą nikomu udostępniane." type="text"></label><br />
+                    <label>Nazwisko<input type="text"></label><br />
+                    
+                <br /><br />
+                    <textarea>Napisz do nas!</textarea>  <br />
+                    <input type="submit" value="Wyślij">
+                </form><br /><br />
+                <p id="adres">
+                    Imię:Jan <br />
+                    Nazwisko:Nowak<br />
+                    Telefon:123456789<br />
+                    Ulica:Piłkarska <br />
+                    Kod pocztowy:76-115<br />
+                </p>
+                <div id="animation1"></div>
+                <div id="animation2"></div>
+            </div>
+
+            <div id="stopka">Autor: Jakub Wyka</div>
+        </div>
+
+</body>
+</html>
